@@ -52,18 +52,3 @@ const server = app.listen(app.get("port"), function () {
   console.log("Node.js API app running at http://%s:%s", host, port)
 })
 
-process.on('SIGINT', () => {
-  console.log('Received SIGINT. Closing server...')
-  server.close(() => {
-    console.log('Server closed. Exiting process...')
-    process.exit(0)
-  })
-})
-
-process.on('SIGTERM', () => {
-  console.log('Received SIGTERM. Closing server...')
-  server.close(() => {
-    console.log('Server closed. Exiting process...')
-    process.exit(0)
-  })
-})
