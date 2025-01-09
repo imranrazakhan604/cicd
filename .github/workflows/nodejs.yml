@@ -39,7 +39,7 @@ jobs:
       # Posting comment on PR 
       - name: Post comment to PR with results
         if: github.event_name == 'pull_request'
-        uses: imranrazakhan604/sticky-pull-request-comment@v2
+        uses: imranrazakhan604/cicd
         with:
           header: Test Results
           append: true
