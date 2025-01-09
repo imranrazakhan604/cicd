@@ -15,7 +15,7 @@ on:
 
 # Define the jobs
 jobs:
-  build:
+  test:
     # Define the operating system for the runner
     runs-on: ubuntu-latest
 
