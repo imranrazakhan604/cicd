@@ -6,7 +6,7 @@ var app = express()
 app.set("port", process.env.PORT || 4500)
 
 app.get('/', function (req, res) {
-  console.log('GET request received')
+  console.log('GET request received just now')
   res.writeHead(200, {'Content-Type': 'application/json'})
   var response = { "response" : "This is GET method." }
   console.log(response)
