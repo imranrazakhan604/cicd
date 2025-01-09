@@ -8,13 +8,13 @@ app.set("port", process.env.PORT || 4500)
 app.get('/', function (req, res) {
   console.log('GET request received')
   res.writeHead(200, {'Content-Type': 'application/json'})
-  var response = { "response" : "This is updated GET method." }
+  var response = { "response" : "This is GET method." }
   console.log(response)
   res.end(JSON.stringify(response))
 })
 
 app.get('/:id', function (req, res) {
-  console.log('GET /:id request received')
+  console.log('GET /:id request received just now')
   res.writeHead(200, {'Content-Type': 'application/json'})
   var response = { "response" : "This is GET method with id=" + req.params.id + "." }
   console.log(response)
